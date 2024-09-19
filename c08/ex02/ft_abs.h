@@ -1,30 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: karocha- <karocha-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 11:09:02 by karocha-          #+#    #+#             */
-/*   Updated: 2024/02/12 14:59:55 by karocha-         ###   ########.fr       */
+/*   Created: 2024/02/15 11:30:25 by karocha-          #+#    #+#             */
+/*   Updated: 2024/02/15 11:39:09 by karocha-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_ABS_H
+# define FT_ABS_H
+# define ABS(Value) ((Value) * (Value >= 0) + (-Value) * (Value < 0))
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
-		i++;
-	return (s1[i] - s2[i]);
-}
-/*int	main()
-{
-	printf("%d", ft_strcmp("Hello", "Hello1"));
-	printf("\n%d", ft_strcmp("Hello", "He"));
-	printf("\n%d", ft_strcmp("He", "Hello"));
-	printf("\n%d", ft_strcmp("Hello", "Hello"));
-}*/
+#endif

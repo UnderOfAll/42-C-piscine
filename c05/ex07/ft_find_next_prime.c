@@ -6,7 +6,7 @@
 /*   By: karocha- <karocha-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 10:56:04 by karocha-          #+#    #+#             */
-/*   Updated: 2024/02/10 10:23:29 by karocha-         ###   ########.fr       */
+/*   Updated: 2024/02/12 13:55:44 by karocha-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_is_prime(int nb)
 		return (1);
 	if (nb % 2 == 0)
 		return (0);
-	while (i <= nb / 2)
+	while (i <= nb / i)
 	{
 		if (nb % i == 0)
 			return (0);

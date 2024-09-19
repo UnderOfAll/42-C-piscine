@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft.h                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: karocha- <karocha-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 11:09:02 by karocha-          #+#    #+#             */
-/*   Updated: 2024/02/12 14:59:55 by karocha-         ###   ########.fr       */
+/*   Created: 2024/02/11 20:57:02 by karocha-          #+#    #+#             */
+/*   Updated: 2024/02/15 15:25:34 by karocha-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_H
+# define FT_H
 
-int	ft_strcmp(char *s1, char *s2)
-{
-	unsigned int	i;
+void	ft_putchar(char c);
+void	ft_swap(int *a, int *b);
+void	ft_putstr(char *str);
+int		ft_strlen(char *str);
+int		ft_strcmp(char *s1, char *s2);
 
-	i = 0;
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
-		i++;
-	return (s1[i] - s2[i]);
-}
-/*int	main()
-{
-	printf("%d", ft_strcmp("Hello", "Hello1"));
-	printf("\n%d", ft_strcmp("Hello", "He"));
-	printf("\n%d", ft_strcmp("He", "Hello"));
-	printf("\n%d", ft_strcmp("Hello", "Hello"));
-}*/
+#endif

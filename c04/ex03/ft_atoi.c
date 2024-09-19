@@ -6,7 +6,7 @@
 /*   By: karocha- <karocha-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/31 13:32:40 by karocha-          #+#    #+#             */
-/*   Updated: 2024/02/08 17:18:20 by karocha-         ###   ########.fr       */
+/*   Updated: 2024/02/15 15:04:11 by karocha-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ int	ft_atoi(char *str)
 	}
 	return (res * c);
 }
-/*int main() 
+int main() 
 {
-	char *s = "    ---+--+0123456789-z555ab567";
+	char *s = "         ---++--+1234ab567";
 	printf("%d", ft_atoi(s));
-}*/
+}

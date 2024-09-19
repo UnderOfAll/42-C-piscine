@@ -1,30 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: karocha- <karocha-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 11:09:02 by karocha-          #+#    #+#             */
-/*   Updated: 2024/02/12 14:59:55 by karocha-         ###   ########.fr       */
+/*   Created: 2024/02/15 11:39:55 by karocha-          #+#    #+#             */
+/*   Updated: 2024/02/15 15:27:38 by karocha-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-int	ft_strcmp(char *s1, char *s2)
+typedef struct s_point
 {
-	unsigned int	i;
+	int	x;
+	int	y;
+}		t_point;
 
-	i = 0;
-	while (s1[i] == s2[i] && (s1[i] != '\0' || s2[i] != '\0'))
-		i++;
-	return (s1[i] - s2[i]);
-}
-/*int	main()
-{
-	printf("%d", ft_strcmp("Hello", "Hello1"));
-	printf("\n%d", ft_strcmp("Hello", "He"));
-	printf("\n%d", ft_strcmp("He", "Hello"));
-	printf("\n%d", ft_strcmp("Hello", "Hello"));
-}*/
+#endif
